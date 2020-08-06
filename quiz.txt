@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        .myclass {
+            background: url("op.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+
+        }
+
+        .header {
+            flex: 1;
+            background: rgb(7, 39, 54);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+        }
+
+        .QUIZMANIA {
+            font-weight: bold;
+            font-size: 21px;
+            color: rgb(250, 249, 246);
+            margin-right: 800px;
+        }
+
+
+        .h {
+
+            padding: 3px;
+            font-weight: bold;
+            font-size: 17px;
+            margin-left: 20px;
+            color: rgb(250, 249, 246);
+        }
+
+        .h:hover {
+            color: black;
+            background: white;
+            cursor: pointer;
+            /* border: 1px solid black; */
+
+        }
+
+        .middle {
+            flex: 8;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .circle {
+            width: 28vh;
+            height: 28vh;
+            /*BLUE BG*/
+            background: radial-gradient(ellipse at center,
+                    rgb(17, 117, 153)10%,
+                    rgb(15, 67, 85) 66%,
+                    rgba(0, 128, 172, 0) 0%);
+            position: relative;
+            margin: 12px;
+            color: white;
+        }
+
+        .circle:hover {
+            opacity: 0.9;
+            color: yellow;
+            cursor: pointer;
+        }
+
+        .text {
+            height: 100%;
+            font-size: 21px;
+            line-height: 1.5;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .footer {
+            flex: 1;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myclass" style='display:flex;flex-direction:column;'>
+        <!--head-->
+
+        <div class="header">
+            <div class="QUIZMANIA">QUIZ<span style="color: red;">MANIA</span></div>
+            <div class="h"><i class="fa fa-home"></i> Home</div>
+            <div class="h">Log In</div>
+            <div class="h">Sign Up</div>
+            <!-- <div class="h"><button><i class="fa fa-address-card"></i>About Us</button></div>
+            <div class="h"><button><span style="margin-right:2px;"><i class="fal fa-phone"></i></span>Contact
+                    Us</button>
+            </div> -->
+            <div class="h" style="margin-right:30px"><i class="fa fa-bars"></i></div>
+        </div>
+
+        <!--center-->
+        <div class="middle">
+            <div class="circle">
+                <h3 class="text">GENERATE<br> QUIZ</h3>
+            </div>
+            <div class="circle">
+                <h3 class="text">ENTER<br> QUIZ</h3>
+            </div>
+            <div class="circle">
+                <h3 class="text">GENERATE<br>REPORT</h3>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <!-- This Website is developed and maintained by Shraddha Shende , Akanksha Pathak and Pravin Jeurkar . -->
+            <div><i class="fab fa-instagram"></i></div>
+            <div><i class="fab fa-facebook-square"></i></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
